@@ -75,8 +75,8 @@ body {
 
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-navigation {
@@ -87,6 +87,7 @@ body {
 .header-logo {
   display: inline-block;
   padding-top: 24px;
+  margin-right: 93px;
   padding-bottom: 25px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -94,7 +95,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-color);
-  margin-right: 93px;
 }
 
 .header-logo span {
@@ -146,8 +146,8 @@ body {
 
 /* ------------------------------- HERO ---------------------------------- */
 .hero {
-  background-color: var(--main-background-color);
   padding: 200px 0;
+  background-color: var(--main-background-color);
 }
 
 .hero-title {
