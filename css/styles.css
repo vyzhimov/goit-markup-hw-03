@@ -8,6 +8,7 @@
   --main-background-color: #2f303a;
   --team-background-color: #f5f4fa;
   --btn-hover-color: #188ce8;
+  --border-header-color: #ececec;
   --default-lh: 1.14; /*16px*/
   --default-section-padding: 94px;
 }
@@ -69,13 +70,11 @@ body {
 
 /* ----------------------------- HEADER -------------------------------- */
 .header {
-  height: 80px; /*без задання висоти секції не вдавалося зробити заміри як у макеті = 80px, було +1px */
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-header-color);
 }
 
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -107,6 +106,10 @@ body {
   gap: 50px;
 }
 
+.header-sublist {
+  margin-left: auto;
+}
+
 .header-link {
   display: inline-block;
   padding: 32px 0;
@@ -134,7 +137,7 @@ body {
   font-size: 14px;
   line-height: var(--default-lh);
   letter-spacing: 0.02em;
-  color: var(---secondcolor);
+  color: var(--second-text-color);
 }
 
 .header-mail:hover,
@@ -148,6 +151,7 @@ body {
 .hero {
   padding: 200px 0;
   background-color: var(--main-background-color);
+  text-align: center;
 }
 
 .hero-title {
@@ -164,9 +168,7 @@ body {
 }
 
 .hero-btn {
-  display: block;
   padding: 10px 32px;
-  margin: 0 auto;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -190,7 +192,7 @@ body {
 
 .advantages {
   padding-top: var(--default-section-padding);
-  padding-bottom: var(--default-section-padding);
+  padding-bottom: 47px;
 }
 
 .advantages-list {
@@ -220,6 +222,7 @@ body {
 
 /* ------------------------------- SERVICES ---------------------------------- */
 .services {
+  padding-top: 47px;
   padding-bottom: var(--default-section-padding);
 }
 
@@ -272,7 +275,6 @@ body {
 }
 
 .team-subtitle {
-  padding-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -281,7 +283,6 @@ body {
   letter-spacing: 0.03em;
 }
 .team-text {
-  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -289,7 +290,11 @@ body {
   color: var(--second-text-color);
 }
 
-/* --------------------------------- FOOTER ------------------------------------ */
+.team-text-wrapper {
+  padding: 30px 0;
+}
+
+/* --------------------------------- Portfolio ------------------------------------ */
 
 .portfolio {
   padding-top: var(--default-section-padding);
@@ -304,8 +309,6 @@ body {
 }
 
 .portfolio-btn {
-  min-width: 73px;
-  height: 38px;
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -315,7 +318,6 @@ body {
   letter-spacing: 0.03em;
   cursor: pointer;
   background: var(--team-background-color);
-  border: none;
   border-color: transparent;
   border-radius: 4px;
 }
@@ -396,8 +398,6 @@ body {
 }
 
 .footer-address-link {
-  display: inline-block;
-  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -406,7 +406,6 @@ body {
 
 .footer-mail,
 .footer-tel {
-  display: inline-block;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -414,7 +413,14 @@ body {
 }
 
 .footer-mail {
+}
+
+.footer-item {
   margin-bottom: 9px;
+}
+
+.footer-item:last-child {
+  margin-bottom: 0px;
 }
 
 .footer-address-link:hover,
